@@ -21,19 +21,22 @@ The createStore method and some basic setup has already been implemented for you
 
 ## Instructions
 
-1. You will need to write the `BandsContainer` component. This component should
-   act as your connection to the Redux store and should be a child of the App
-   component. Any values we want to use from Redux as well as any actions we
-   want to dispatch should be set up and available in `BandsContainer` so they
-   can be passed down to other components.
+1. You will need to write the `BandsContainer` component. [DONE]
+
+a) This component should act as your connection to the Redux store and... [DONE] 
+b) should be a child of the App component. [DONE]
+c) Any values we want to use from Redux [DONE]
+d) as well as any actions we want to dispatch should be set up and available in `BandsContainer` so they can be passed down to other components. [DONE]
 
 2. You will need to write the `BandInput` component as a child of
-   `BandsContainer`. This component should have a form with a text input and
-   submit button. We would like to update this *component's* state each time the
-   user types a new character in the input, stored as `this.state.name`. We will
-   only update the __Redux__ store's state when the user hits the submit button.
-   The dispatched action required to initiate this update should be set up in
-   `BandsContainer` and passed down as the prop `addBand` to `BandInput`.
+`BandsContainer`.[DONE]
+a) This component should have a form with a text input and
+submit button. [DONE]
+b) We would like to update this *component's* state each time the
+user types a new character in the input, stored as `this.state.name`. [DONE]
+c) We will only update the __Redux__ store's state when the user hits the submit button.
+d) The dispatched action required to initiate this update should be set up in
+`BandsContainer` and passed down as the prop `addBand` to `BandInput`.
 
 3. You will also need to fill in the `manageBand` reducer located under
    `./src/reducers/manageBand.js`. It will need to respond to an action of `type
