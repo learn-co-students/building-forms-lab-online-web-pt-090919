@@ -1,4 +1,3 @@
-// Add BandInput component
 import React, { Component } from 'react'
 
 class BandInput extends Component {
@@ -11,11 +10,12 @@ class BandInput extends Component {
       name: event.target.value
     })
   }
+
   
   render() {
     return(
       <div>
-        <form onSubmit={ e => this.props.addBand(e, this.state) }>
+         <form onSubmit={ e => this.props.addBand(e, this.state) }>
           <input name="band"
             value={this.state.name}
             onChange={e => this.handleChange(e)}
